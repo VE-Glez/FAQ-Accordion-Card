@@ -71,7 +71,7 @@
     font-size: $Font-size*2.5;
   }
 
-  &__question{
+  &__questions{
     width: 100%;
     padding: 15px 0;
     color: $Dark-grayish-blue;
@@ -80,6 +80,10 @@
     &-question{
       display: block;
       position: relative;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
 
       &:hover{
         color: $Soft-red;
@@ -112,6 +116,15 @@
   }
 }
 
+.attribution {
+  background-color: $Soft-violet;
+  text-align: center;
+  & a, & a:visited{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+  }
+}
 
 @media screen and (min-width: 1440px){
 
